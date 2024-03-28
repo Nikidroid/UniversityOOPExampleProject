@@ -33,6 +33,11 @@ public:
 		mark = 0;
 	}
 	
+	// Destructor
+	~Student() {
+		cout << "Desctructor is called" << endl;
+	}
+
 	string convert() {
 		string s = "";
 		s += name;
