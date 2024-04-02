@@ -35,7 +35,6 @@ public:
 	
 	// Destructor
 	~Student() {
-		cout << "Desctructor is called" << endl;
 	}
 
 	string convert() {
