@@ -4,7 +4,8 @@
 class Manager {
 public:
 	double getMaxMark(Student* students, int length) {
-		int max = students[0].mark;
+		double max = students[0].mark;
+
 		for (int i = 1; i < length; i++) {
 			if (max < students[i].mark) {
 				max = students[i].mark;
@@ -15,9 +16,10 @@ public:
 	}
 
 	double getMinMark(Student* students, int length) {
-		int min = students[0].mark;
+		double min = students[0].mark;
+
 		for (int i = 1; i < length; i++) {
-			if (min < students[i].mark) {
+			if (min > students[i].mark) {
 				min = students[i].mark;
 			}
 		}
@@ -34,7 +36,7 @@ public:
 
 		return avg / length;
 	}
-	
+
 	Student getBestStudent(Student* students, int length) {
 		double bestMark = getMaxMark(students, length);
 		Student st = NULL;
@@ -45,6 +47,7 @@ public:
 				break;
 			}
 		}
+
 		return st;
 	}
 };

@@ -1,12 +1,22 @@
 #include "Student.h"
+#include "Manager.h"
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	const int size = 5;
+	Student st1("Alex", 14, 9);
+	Student st2("Alice", 13, 7);
+	Student st3("Peter", 13, 6);
+	Student st4("Potter", 13, 10);
+	Student st5("Matvey", 15, 8);
+	
+	Student students[]{ st1, st2, st3, st4, st5 };
 
-	Student students[size]{ {"Alice"}, {10}, {"Peter", 14, 9}, {"Peter"} ,{9} };
+	Manager manager;
+
+	cout << "Best mark is: " << manager.getMaxMark(students, 5) << endl;
+	cout << "Worst mark is: " << manager.getMinMark(students, 5) << endl;
 
 	return 0;
 }

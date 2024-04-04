@@ -33,6 +33,13 @@ public:
 		mark = 0;
 	}
 	
+	Student(double m) {
+		cout << "calling constructor with parameters 2" << endl;
+		name = "no name";
+		age = 0;
+		mark = m;
+	}
+
 	// Destructor
 	~Student() {
 	}
