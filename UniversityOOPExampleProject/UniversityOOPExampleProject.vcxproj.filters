@@ -24,6 +24,9 @@
     <ClCompile Include="Student.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Manager.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Student.h">
