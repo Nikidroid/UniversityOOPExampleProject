@@ -9,26 +9,26 @@ Student::Student() {
 }
 
 // Canonical constructor with parameters (arguments)
-Student::Student(string nm, int a, double m) {
+Student::Student(string name, int age, double mark) {
 	//cout << "Canonical constructor is called" << endl;
-	name = nm;
-	age = a;
-	mark = m;
+	this->name = name;
+	this->age = age;
+	this->mark = mark;
 }
 
 // Constructor with parameters (arguments)
-Student::Student(string nm) {
+Student::Student(string name) {
 	//cout << "Constructor with parameters is called" << endl;
-	name = nm;
+	this->name = name;
 	age = 0;
 	mark = 0;
 }
 
-Student::Student(double m) {
+Student::Student(double mark) {
 	cout << "calling constructor with parameters 2" << endl;
 	name = "no name";
 	age = 0;
-	mark = m;
+	this->mark = mark;
 }
 
 // Destructor
@@ -39,17 +39,17 @@ string Student::getName() {
 	return name;
 }
 
-void Student::setName(string nm) {
-	name = nm;
+void Student::setName(string name) {
+	this->name = name;
 }
 
 int Student::getAge() {
 	return age;
 }
 
-void Student::setAge(int a) {
-	if (a > 0 && a < 90) {
-		age = a;
+void Student::setAge(int age) {
+	if (age > 0 && age < 90) {
+		this->age = age;
 	}
 }
 
@@ -57,9 +57,9 @@ double Student::getMark() {
 	return mark;
 }
 
-void Student::setMark(double m) {
-	if (m > 0 && m <= 10) {
-		mark = m;
+void Student::setMark(double mark) {
+	if (mark > 0 && mark <= 10) {
+		this->mark = mark;
 	}
 }
 string Student::convert() {
