@@ -1,39 +1,10 @@
 #include "Student.h"
 
-// Default constructor
-Student::Student() {
-	//cout << "Default constructor is called" << endl;
-	name = "No name";
-	age = 5;
-	mark = 4;
-}
+//// copy-constructor
+//Student(const Student& student) {
 
-// Canonical constructor with parameters (arguments)
-Student::Student(string name, int age, double mark) {
-	//cout << "Canonical constructor is called" << endl;
-	this->name = name;
-	this->age = age;
-	this->mark = mark;
-}
+//}
 
-// Constructor with parameters (arguments)
-Student::Student(string name) {
-	//cout << "Constructor with parameters is called" << endl;
-	this->name = name;
-	age = 0;
-	mark = 0;
-}
-
-Student::Student(double mark) {
-	cout << "calling constructor with parameters 2" << endl;
-	name = "no name";
-	age = 0;
-	this->mark = mark;
-}
-
-// Destructor
-Student::~Student() {
-}
 
 string Student::getName() {
 	return name;
@@ -62,6 +33,7 @@ void Student::setMark(double mark) {
 		this->mark = mark;
 	}
 }
+
 string Student::convert() {
 	string s = "";
 	s += name;
