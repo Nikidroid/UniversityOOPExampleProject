@@ -9,8 +9,13 @@ private:
 public:
 	int getSize();
 	void add(Student student);
-	// bool remove(Student student);
+	void remove(int index);
+	void remove(Student student);
+
+	int findFirstIndex(Student student);
+
 	Student get(int index);
+
 	string getInfo();
 
 };
