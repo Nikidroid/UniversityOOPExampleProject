@@ -24,9 +24,12 @@ int main() {
 
 	cout << "Before removing: " << endl;
 	cout << groupA.getInfo() << endl;
+	cout << groupA.getSize() << endl;
+
 
 	groupA.remove(0);
-	groupA.remove(6);
+	//groupA.remove(st6);
+	cout << groupA.getSize() << endl;
 
 	cout << "After removing: " << endl;
 	cout << groupA.getInfo() << endl;
