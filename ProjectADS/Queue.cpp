@@ -40,7 +40,7 @@ int Queue::dequeue() {
 	return 0;
 }
 
-int Queue::peek() {
+int Queue::peak() {
 	if (!isEmpty()) {
 		return queue[0];
 	}
