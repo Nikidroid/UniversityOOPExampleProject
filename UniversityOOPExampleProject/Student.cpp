@@ -1,9 +1,4 @@
-#include "Student.h"
-
-//// copy-constructor
-//Student(const Student& student) {
-
-//}
+﻿#include "Student.h"
 
 double Student::getMark() {
 	return mark;
@@ -17,7 +12,7 @@ void Student::setMark(double mark) {
 
 string Student::getInfo() {
 	string s = "";
-	s += name;
+	s += getName();
 	s += ": age = " + to_string(getAge());
 	s += ", mark = " + to_string(mark);
 	return s;

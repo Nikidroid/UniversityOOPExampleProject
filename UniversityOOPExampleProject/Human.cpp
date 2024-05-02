@@ -1,5 +1,4 @@
 #include "Human.h"
-#pragma once
 
 string Human::getName() {
 	return name;
@@ -20,7 +19,10 @@ void Human::setAge(int age) {
 }
 
 string Human::getInfo() {
+	string s = "";
 
+	s += name + ": age = ";
+	s += to_string(age);
+
+	return s;
 }
-
-

@@ -1,9 +1,8 @@
 #include "Manager.h"
 #include "Professor.h"
-#include <iostream>
 
 int main() {
-	
+	Professor prof1;
 
 	return 0;
 }

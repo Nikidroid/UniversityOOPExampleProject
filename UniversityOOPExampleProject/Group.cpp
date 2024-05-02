@@ -70,7 +70,7 @@ Student Group::get(int index) {
 }
 
 string Group::getInfo() {
-	string s = "List of students:";
+	string s = "Lit of students:";
 
 	for (int i = 0; i < size; i++)
 	{

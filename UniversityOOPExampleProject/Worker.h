@@ -1,8 +1,5 @@
 #pragma once
 #include "Human.h"
-#include <iostream>
-
-using namespace std;
 
 class Worker : public Human
 {
@@ -26,3 +23,4 @@ public:
 
 	string getInfo();	
 };
+

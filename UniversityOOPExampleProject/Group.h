@@ -1,7 +1,8 @@
 #pragma once
 #include "Student.h"
 
-class Group {
+class Group
+{
 private:
 	Student* list;
 	int size = 0;
@@ -15,8 +16,7 @@ public:
 	int findFirstIndex(Student student);
 
 	Student get(int index);
-
 	string getInfo();
-
+	//...
 };
 
